@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+
+    <!-- An empty name means: store inside the applet's own config, i.e.
+         ~/.config/plasma-org.kde.plasma.desktop-appletsrc, which is the file
+         plasmashell reads and writes for every widget. -->
+    <kcfgfile name=""/>
+
+    <group name="General">
+
+        <!-- Which monitor the global shortcut keeps visible.
+             Empty string = the one that was picked last in the widget. -->
+        <entry name="shortcutScreen" type="String">
+            <label>Monitor kept visible when the global shortcut is pressed</label>
+            <default></default>
+        </entry>
+
+        <!-- Remembers the last monitor picked in the widget, so the shortcut
+             still does the right thing after a re-login. -->
+        <entry name="lastScreen" type="String">
+            <label>Last monitor picked in the widget</label>
+            <default></default>
+        </entry>
+
+        <entry name="clickToRestore" type="Bool">
+            <label>Clicking a blacked-out monitor brings all monitors back</label>
+            <default>true</default>
+        </entry>
+
+        <entry name="hideCursor" type="Bool">
+            <label>Hide the mouse cursor on blacked-out monitors</label>
+            <default>false</default>
+        </entry>
+
+        <entry name="showResolution" type="Bool">
+            <label>Show the resolution under each monitor name</label>
+            <default>true</default>
+        </entry>
+
+        <entry name="collapseAfterClick" type="Bool">
+            <label>Close the widget popup after picking a monitor</label>
+            <default>true</default>
+        </entry>
+
+    </group>
+</kcfg>

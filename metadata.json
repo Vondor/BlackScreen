@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "Black Screen"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Show one monitor and black out all the others",
+        "Description[de]": "Nur einen Monitor anzeigen und alle anderen schwarz schalten",
+        "Icon": "video-display",
+        "Id": "org.kde.plasma.blackscreen",
+        "License": "GPL-3.0-or-later",
+        "Name": "Black Screen",
+        "Name[de]": "Black Screen",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
