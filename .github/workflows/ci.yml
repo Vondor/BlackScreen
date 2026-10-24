@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q qt6-declarative-dev-tools libxml2-utils jq
+      - name: QML files parse
+        run: |
+          status=0
+          for f in $(git ls-files '*.qml'); do
+            /usr/lib/qt6/bin/qmlformat "$f" > /dev/null || { echo "::error file=$f::QML does not parse"; status=1; }
+          done
+          exit $status
+      - name: metadata.json is valid JSON
+        run: jq empty metadata.json
+      - name: Settings schema is well-formed XML
+        run: xmllint --noout contents/config/main.xml
