@@ -25,7 +25,7 @@ contents/ui/configGeneral.qml  settings page
 
 ## Human gates
 
-A pull request that touches any of these waits for the maintainer. Agents never merge it.
+Tick every gate a pull request touches, so the record shows it. For now the maintainer lets agents merge every pull request themselves once CI is green, gated or not (2026-10-24, recorded in Agent-Teams `projects/blackscreen/README.md`). If he withdraws that, a gated pull request waits for him again.
 
 - License (`LICENSE`, SPDX headers, `metadata.json` "License")
 - Package id (`metadata.json` "Id"); changing it breaks every existing install
