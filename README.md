@@ -19,6 +19,15 @@ Then add "Black Screen" from the widget list. To update later: `git pull && kpac
 - Hide the mouse cursor on black monitors
 - Show resolutions, close the popup after picking
 
+## Publisher
+
+Black Screen is published by [SerpentSoftware](https://serpentsoftware.de).
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/branding/serpentsoftware-mark-dark.svg">
+  <img src="docs/branding/serpentsoftware-mark.svg" alt="SerpentSoftware logo" width="64">
+</picture>
+
 ## License
 
-GPL-3.0-or-later, see [LICENSE](LICENSE).
+Code: GPL-3.0-or-later, see [LICENSE](LICENSE). The SerpentSoftware logo is the publisher's brand mark and is not covered by the GPL (`LicenseRef-SerpentSoftware-Logo`, text in [LICENSES/](LICENSES/), files listed in [REUSE.toml](REUSE.toml)): copy it unmodified with the project, but remove it if you publish a fork under your own name.
