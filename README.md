@@ -21,7 +21,7 @@ Then add "Black Screen" from the widget list. To update later: `git pull && kpac
 
 ## Publisher
 
-Black Screen is published by [SerpentSoftware](https://serpentsoftware.de).
+Black Screen is published by SerpentSoftware.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/branding/serpentsoftware-mark-dark.svg">
